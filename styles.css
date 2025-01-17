@@ -184,7 +184,7 @@ header {
   cursor: pointer;
 }
 .sidenav {
-  height: 100dvh;
+  height: 100vh;
   width: 0%;
   position: fixed;
   z-index: 990;
