@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Axia Finsweet</title>
+  </head>
+  <body>
+    <header>
+      <div class="card-container header-container">
+        <a href="#" aria-label="Finsweet Home" class="finsweet-home">
+          <img src="./images/Logo.png" alt="Finsweet" class="logo" />
+        </a>
+        <div class="header__nav-contact">
+          <nav>
+            <ul class="nav-lists">
+              <li><a href="#" class="nav-links">Home</a></li>
+              <li><a href="#" class="nav-links">About Us</a></li>
+              <li><a href="#services" class="nav-links">Services</a></li>
+              <li>
+                <a href="#faq" class="nav-links"
+                  ><abbr title="Frequently Asked Questions">FAQs</abbr></a
+                >
+              </li>
+              <li><a href="#contact" class="nav-links">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="contact">
+            <img src="./images/Assistance-Icon.png" alt="" />
+            <div>
+              <p>Road Assistance</p>
+              <p>
+                <a href="tel:18002652452" class="nav-links">1800-265-24-52</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <button onclick="openNav()" class="open-side-nav">
+          <img
+            src="./images/menu_24dp_FF6433_FILL0_wght400_GRAD0_opsz24.svg"
+            alt=""
+          />
+        </button>
+      </div>
+
+      <div aria-hidden="true" class="sidenav" id="sideNav">
+        <nav>
+          <button
+            href="javascript:void(0)"
+            class="closebtn"
+            onclick="closeNav()"
+          >
+            <img
+              src="./images/close_24dp_FF6433_FILL0_wght500_GRAD0_opsz24.svg"
+              alt=""
+            />
+          </button>
+          <ul class="nav-lists">
+            <li><a href="#" class="nav-links">Home</a></li>
+            <li><a href="#" class="nav-links">About Us</a></li>
+            <li><a href="#services" class="nav-links">Services</a></li>
+            <li>
+              <a href="#faq" class="nav-links"
+                ><abbr title="Frequently Asked Questions">FAQs</abbr></a
+              >
+            </li>
+            <li><a href="#contact" class="nav-links">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="contact">
+          <img src="./images/Assistance-Icon.png" alt="" />
+          <div>
+            <p>Road Assistance</p>
+            <p>
+              <a href="tel:18002652452" class="nav-links">1800-265-24-52</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-section">
+        <div class="card-container hero-container">
+          <div class="hero-text-div">
+            <h1>Get your vehicle service done online at one place</h1>
+            <a href="#" class="page-link">Book a service</a>
+            <div class="icon-open">
+              <img src="./images/clock.png" alt="" />
+              <div class="open">
+                <p>We are open</p>
+                <p>Monday to Friday, 9am to 10am</p>
+              </div>
+            </div>
+          </div>
+          <div class="hero-image-div"></div>
+        </div>
+      </section>
+
+      <section class="section-two">
+        <div class="card-container section-two__container">
+          <div class="section-two__first-div">
+            <h2>We take car servicing seriously</h2>
+            <ul class="section-two__list-items">
+              <li>
+                <img src="./images/gear-2.png" alt="" />
+                <div class="section-two__list__text-div">
+                  <h3>Convenient Services</h3>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Non, officia!
+                  </p>
+                </div>
+              </li>
+              <li>
+                <img src="./images/person-2.png" alt="" />
+                <div class="section-two__list__text-div">
+                  <h3>Expert Mechanics</h3>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Non, officia!
+                  </p>
+                </div>
+              </li>
+              <li>
+                <img src="./images/money-2.png" alt="" />
+                <div class="section-two__list__text-div">
+                  <h3>Transparent Pricing</h3>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Non, officia!
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <a href="#" class="section-two__hyperlink nav-links">
+              <span>Know more about us</span>
+              <img src="./images/Arrow-1.png" alt="" />
+            </a>
+          </div>
+
+          <div class="section-two__second-div">
+            <h2>Get a quote for a car service</h2>
+            <form action="">
+              <div class="formgroup">
+                <input
+                  type="text"
+                  placeholder=" "
+                  name="name"
+                  id="name"
+                  required
+                  autocomplete="on"
+                />
+                <label for="name">Your Name</label>
+              </div>
+
+              <div class="formgroup">
+                <input
+                  type="tel"
+                  placeholder=" "
+                  name="number"
+                  id="number"
+                  required
+                  autocomplete="on"
+                />
+                <label for="number">Your Phone Number</label>
+              </div>
+
+              <div class="formgroup">
+                <input
+                  type="email"
+                  placeholder=" "
+                  name="email"
+                  id="email"
+                  required
+                  autocomplete="on"
+                />
+                <label for="email">Your Email</label>
+              </div>
+
+              <div class="formgroup">
+                <input
+                  type="text"
+                  placeholder=" "
+                  name="car"
+                  id="car"
+                  required
+                  autocomplete="on"
+                />
+                <label for="car">Car Model</label>
+              </div>
+
+              <div class="formgroup">
+                <input
+                  type="text"
+                  placeholder=" "
+                  name="location"
+                  id="location"
+                  required
+                  autocomplete="on"
+                />
+                <label for="location">Your Location</label>
+              </div>
+
+              <input type="submit" value="Get A Qoute" class="page-link" />
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-three">
+        <div class="card-container section-three__container">
+          <div class="section-three__first-div">
+            <h2>We follow a clear process to help you out</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+              ipsa hic doloribus enim non! Ea quam deleniti adipisci ut tempora
+              odio debitis corrupti architecto eos cum accusantium, dolorem
+              aliquam dolorum iure enim exercitationem laborum et, nulla
+              perspiciatis provident fugit? Doloribus facilis quod aperiam.
+              Nesciunt ipsum, facere et incidunt nihil id?
+            </p>
+            <a href="#" class="page-link">Book a service</a>
+          </div>
+
+          <div class="section-three__second-div">
+            <ul>
+              <img src="./images/Line (1).png" alt="" class="pseudo1" />
+              <img src="./images/Line (1).png" alt="" class="pseudo2" />
+              <li>
+                <img src="./images/one.png" alt="" />
+                <div class="section-three__list__text-div">
+                  <h3>Get a quote</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Deleniti impedit nam molestiae sed voluptates esse.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <img src="./images/two.png" alt="" />
+                <div class="section-three__list__text-div">
+                  <h3>Book an Appointment</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Deleniti impedit nam molestiae sed voluptates esse.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <img src="./images/three.png" alt="" />
+                <div class="section-three__list__text-div">
+                  <h3>Get your Service Done</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Deleniti impedit nam molestiae sed voluptates esse.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-four" id="services">
+        <div class="card-container section-four__container">
+          <h2>Our Services</h2>
+          <div class="services-container">
+            <div class="service-item">
+              <div>
+                <img src="./images/Diagnostics.png" alt="" />
+                <p>Diagnostics</p>
+              </div>
+            </div>
+            <div class="service-item">
+              <div>
+                <img src="./images/Engine-repair.png" alt="" />
+                <p>Engine Repair</p>
+              </div>
+            </div>
+            <div class="service-item">
+              <div>
+                <img src="./images/Wheel-repair.png" alt="" />
+                <p>Wheel Repair</p>
+              </div>
+            </div>
+            <div class="service-item">
+              <div>
+                <img src="./images/Oil-filter.png" alt="" />
+                <p>Oil Filter</p>
+              </div>
+            </div>
+            <div class="service-item">
+              <div>
+                <img src="./images/Body-work.png" alt="" />
+                <p>Body Work</p>
+              </div>
+            </div>
+            <div class="service-item">
+              <div>
+                <img src="./images/Batteries.png" alt="" />
+                <p>Batteries</p>
+              </div>
+            </div>
+            <div class="service-item">
+              <div>
+                <img src="./images/Insurance-claim.png" alt="" />
+                <p>Insurance Claim</p>
+              </div>
+            </div>
+            <div class="service-item">
+              <div>
+                <img src="./images/Customer-service.png" alt="" />
+                <p>Custom Service</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-five">
+        <div class="card-container">
+          <div class="section-five__bg-one"></div>
+          <div class="section-five__text-area">
+            <h2>Get in touch with us for your service related query</h2>
+            <a href="#" class="section-five__link page-link">Contact Us</a>
+          </div>
+          <div class="section-five__bg-two"></div>
+        </div>
+      </section>
+
+      <section class="section-six">
+        <div class="card-container">
+          <ul>
+            <li>
+              <p>
+                <span class="p-head">20+</span
+                ><span class="p-subhead">Professionals</span>
+              </p>
+            </li>
+            <li>
+              <p>
+                <span class="p-head">10+</span
+                ><span class="p-subhead">Years Experience</span>
+              </p>
+            </li>
+            <li>
+              <p>
+                <span class="p-head">12k+</span
+                ><span class="p-subhead">Services Offered</span>
+              </p>
+            </li>
+            <li>
+              <p>
+                <span class="p-head">100%</span
+                ><span class="p-subhead">Customer Satisfaction</span>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section-seven">
+        <div class="card-container">
+          <h2>Brands we serve</h2>
+          <div class="section-seven__brand-rows">
+            <img src="./images/Brand-Row-1.png" alt="" class="brands" />
+            <img src="./images/Brand-Row-1.png" alt="" class="brands" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section-eight">
+        <div class="card-container">
+          <h2>Testimonials</h2>
+          <div class="testimonial-card">
+            <div class="testimonial">
+              <figure>
+                <img src="./images/Jonathan-Vallem.png" alt="Jonathan" />
+                <figcaption>
+                  <p>Jonathan Vallem</p>
+                  <p>New York</p>
+                </figcaption>
+              </figure>
+              <blockquote>
+                <p>
+                  <q
+                    >I have got my car repaired at Finsweet many times before,
+                    they are good at what they do. Not only did they repair my
+                    car in a short comprehensive look on all the working</q
+                  >
+                </p>
+              </blockquote>
+            </div>
+            <div class="testimonial">
+              <figure>
+                <img src="./images/Smith-Johnson.jpg" alt="Smith" />
+                <figcaption>
+                  <p>Smith Johnson</p>
+                  <p>New York</p>
+                </figcaption>
+              </figure>
+              <blockquote>
+                <p>
+                  <q
+                    >I have got my car repaired at Finsweet many times before,
+                    they are good at what they do. Not only did they repair my
+                    car in a short comprehensive look on all the working</q
+                  >
+                </p>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-nine" id="faq">
+        <div class="card-container">
+          <h2>Frequently Asked Questions</h2>
+          <ul>
+            <li>
+              <button class="accordion-button">
+                <h3>How long should a car repair take?</h3>
+              </button>
+              <div class="panel">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
+                  amet porro labore tenetur rem soluta blanditiis adipisci,
+                  alias perspiciatis praesentium eligendi ex, modi tempora. Unde
+                  rem eligendi voluptas voluptatem dolor.
+                </p>
+              </div>
+            </li>
+            <li>
+              <button class="accordion-button">
+                <h3>How do I schedule my car's appointment?</h3>
+              </button>
+              <div class="panel">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
+                  amet porro labore tenetur rem soluta blanditiis adipisci,
+                  alias perspiciatis praesentium eligendi ex, modi tempora. Unde
+                  rem eligendi voluptas voluptatem dolor.
+                </p>
+              </div>
+            </li>
+            <li>
+              <button class="accordion-button">
+                <h3>How do I find auto body shops near me?</h3>
+              </button>
+              <div class="panel">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
+                  amet porro labore tenetur rem soluta blanditiis adipisci,
+                  alias perspiciatis praesentium eligendi ex, modi tempora. Unde
+                  rem eligendi voluptas voluptatem dolor.
+                </p>
+              </div>
+            </li>
+            <li>
+              <button class="accordion-button">
+                <h3>What are the repair services provided?</h3>
+              </button>
+              <div class="panel">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
+                  amet porro labore tenetur rem soluta blanditiis adipisci,
+                  alias perspiciatis praesentium eligendi ex, modi tempora. Unde
+                  rem eligendi voluptas voluptatem dolor.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact">
+      <div class="card-container">
+        <div class="row-1">
+          <div class="col-1">
+            <h2>Get in touch with us for your service</h2>
+            <div class="social-icons">
+              <ul>
+                <li>
+                  <h2 class="sr-only">Facebook</h2>
+                  <a href="#" class="social-icon-link"
+                    ><img src="./images/icon-facebook.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <h2 class="sr-only">Twitter</h2>
+                  <a href="#" class="social-icon-link"
+                    ><img src="./images/icon-twitter.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <h2 class="sr-only">Instagram</h2>
+                  <a href="#" class="social-icon-link"
+                    ><img src="./images/icon-instagram.svg" alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-2">
+            <address>
+              <div>
+                <p>Help Line</p>
+                <a href="tel:18002652452" class="nav-links">1800 265 24 52</a>
+              </div>
+
+              <div>
+                <p>Email</p>
+                <a href="mailto:finsweet@gmail.com" class="nav-links"
+                  >finsweet@gmail.com</a
+                >
+              </div>
+
+              <div>
+                <p>Address</p>
+                <p>NH 234 Public Square San Francisco 65368</p>
+              </div>
+            </address>
+          </div>
+        </div>
+        <div class="row-2">
+          <p>
+            &copy; 2025
+            <a href="https://github.com/repro123" class="nav-links"
+              >Ibrahim Bello</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
